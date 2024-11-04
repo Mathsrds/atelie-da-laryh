@@ -154,14 +154,15 @@
         </section>
 
         <section id="contato" class="contact">
-            <h2>Contato</h2>
-            <form>
-                <input type="text" placeholder="Seu Nome" required>
-                <input type="tel" placeholder="Seu Telefone" required>
-                <textarea placeholder="Encomenda" rows="4" required></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/xvgokyvz" method="POST">
+        <input type="text" name="name" placeholder="Seu Nome" required>
+        <input type="tel" name="telephone" placeholder="Seu Telefone" required>
+        <textarea name="message" placeholder="Encomenda" rows="4" required></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
     </div>
 </body>
 </html>
