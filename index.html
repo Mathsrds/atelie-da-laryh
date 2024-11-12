@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ateliê da Laryh</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LTHR4NP7E"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-4LTHR4NP7E');
-    </script>
-
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -52,22 +42,6 @@
         .container {
             margin: 40px;
         }
-        .products, .contact {
-            margin: 20px auto;
-            max-width: 800px;
-        }
-        .product-category {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #f8d7da;
-            border-radius: 10px;
-            background-color: #ffffff;
-        }
-        .product-gallery img {
-            width: 100px;
-            height: auto;
-            margin: 5px;
-        }
         h2 {
             color: #d73c5d;
         }
@@ -94,11 +68,79 @@
         input[type="submit"]:hover {
             background-color: #d73c5d;
         }
+
+        /* New Styles for Products Area */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #fff0f3;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .product-category {
+            background-color: #ffffff;
+            border: 2px solid #f8d7da;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-category:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .product-category h3 {
+            margin-bottom: 10px;
+            color: #d73c5d;
+        }
+        .product-category p {
+            margin-bottom: 15px;
+            color: #a45c6f;
+        }
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .product-gallery img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-gallery img:hover {
+            transform: scale(1.3);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        /* Add subtle SVG decorative elements */
+        .decorative-svg {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            opacity: 0.1;
+        }
+        .decorative-svg:nth-child(1) {
+            top: 10%;
+            left: 5%;
+            animation: float 6s infinite ease-in-out;
+        }
+        .decorative-svg:nth-child(2) {
+            top: 20%;
+            right: 10%;
+            animation: float 7s infinite ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img class="logo" src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Picsart_24-04-29_12-02-46-855.jpg" alt="Logo do Ateliê da Laryh" width="400" height="300">
+        <img class="logo" src="/a/580959b8-ea9a-4920-808b-d8444cda67f5" alt="Logo do Ateliê da Laryh" width="400" height="300">
     </header>
     <nav>
         <a href="#sobre">Sobre</a>
@@ -115,50 +157,50 @@
         </section>
 
         <section id="produtos" class="products">
-            <h2>Nossos Produtos</h2>
             <div class="product-category">
                 <h3>Painéis</h3>
                 <p>Produtos relacionados a painéis decorativos.</p>
                 <div class="product-gallery">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Agora%20temos%20pain%C3%A9is%20olha%20que%20lindinha%20Vamos%20deixar%20sua%20festa%20mais%20linda%20ainda.webp" alt="Painel decorativo 1" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Um%20charme.webp" alt="Painel decorativo 2" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Agora%20temos%20pain%C3%A9is%20olha%20que%20lindinha%20Vamos%20deixar%20sua%20festa%20mais%20linda%20ainda.webp" alt=" alt="Painel decorativo 1" width="100" height="100">
+                    <img src="://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Um%20charme.webp" alt=" alt="Painel decorativo 2" width="100" height="100">
                 </div>
             </div>
             <div class="product-category">
                 <h3>Caixinhas de Presente</h3>
                 <p>Lindas caixinhas personalizadas para diversas ocasiões.</p>
                 <div class="product-gallery">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Caixinha%20de%20cora%C3%A7%C3%A3o%20para%20o%20dia%20das%20m%C3%A3es%F0%9F%9B%8D%20Fa%C3%A7a%20o%20dia%20dela%20ser%20mais%20belo%20e%20lindo%20%20%20%23diadasmaes%20%20%23lembrancinhapersonalizada%20%23comemora%C3%A7%C3%A3o%20(1).webp" alt="Caixinha de presente 1" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Caixinha%20de%20cora%C3%A7%C3%A3o%20para%20o%20dia%20das%20m%C3%A3es%F0%9F%9B%8D%20Fa%C3%A7a%20o%20dia%20dela%20ser%20mais%20belo%20e%20lindo%20%20%20%23diadasmaes%20%20%23lembrancinhapersonalizada%20%23comemora%C3%A7%C3%A3o.webp" alt="Caixinha de presente 2" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Caixinha%20de%20cora%C3%A7%C3%A3o%20para%20o%20dia%20das%20m%C3%A3es%F0%9F%9B%8D%20Fa%C3%A7a%20o%20dia%20dela%20ser%20mais%20belo%20e%20lindo%20%20%20%23diadasmaes%20%20%23lembrancinhapersonalizada%20%23comemora%C3%A7%C3%A3o%20(1).webp" alt=" alt="Caixinha de presente 1" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Caixinha%20de%20cora%C3%A7%C3%A3o%20para%20o%20dia%20das%20m%C3%A3es%F0%9F%9B%8D%20Fa%C3%A7a%20o%20dia%20dela%20ser%20mais%20belo%20e%20lindo%20%20%20%23diadasmaes%20%20%23lembrancinhapersonalizada%20%23comemora%C3%A7%C3%A3o.webp" alt=" alt="Caixinha de presente 2" width="100" height="100">
                 </div>
             </div>
             <div class="product-category">
                 <h3>Livros</h3>
                 <p>Livros únicos, feitos com atenção aos detalhes.</p>
                 <div class="product-gallery">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Livrinhos%20vamos%20colorir%20%23personalizados%20%23livrinhosdecolorir%20(1).webp" alt="Livro personalizado 1" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Livrinhos%20vamos%20colorir%20%23personalizados%20%23livrinhosdecolorir%20(2).webp" alt="Livro personalizado 2" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Livrinhos%20vamos%20colorir%20%23personalizados%20%23livrinhosdecolorir.webp" alt="Livro personalizado 3" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Livrinhos%20vamos%20colorir%20%23personalizados%20%23livrinhosdecolorir%20(1).webp" alt=" alt="Livro personalizado 1" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Livrinhos%20vamos%20colorir%20%23personalizados%20%23livrinhosdecolorir%20(2).webp" alt=" alt="Livro personalizado 2" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Livrinhos%20vamos%20colorir%20%23personalizados%20%23livrinhosdecolorir.webp" alt=" alt="Livro personalizado 3" width="100" height="100">
                 </div>
             </div>
             <div class="product-category">
                 <h3>Calendários</h3>
                 <p>Calendários personalizados para cada preferencia.</p>
                 <div class="product-gallery">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465192387_1711751972724566_6026866319649022581_n.webp" alt="Calendário personalizado 1" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465192093_973306164605543_7151196210581759040_n.webp" alt="Calendário personalizado 2" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465403128_552021904194095_851532839516372077_n.webp" alt="Calendário personalizado 3" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465404047_1125163226282510_1601627742777795165_n.webp" alt="Calendário personalizado 4" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465523948_937009428293830_4171234424745784386_n.webp" alt="Calendário personalizado 5" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465525972_510960198757109_335423755769122485_n.webp" alt="Calendário personalizado 6" width="100" height="100">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465803694_937439225148868_4418834621994243060_n.webp" alt="Calendário personalizado 7" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465192387_1711751972724566_6026866319649022581_n.webp" alt=" alt="Calendário personalizado 1" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465192093_973306164605543_7151196210581759040_n.webp" alt=" alt="Calendário personalizado 2" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465403128_552021904194095_851532839516372077_n.webp" alt=" alt="Calendário personalizado 3" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465404047_1125163226282510_1601627742777795165_n.webp" alt=" alt="Calendário personalizado 4" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465523948_937009428293830_4171234424745784386_n.webp" alt=" alt="Calendário personalizado 5" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465525972_510960198757109_335423755769122485_n.webp" alt=" alt="Calendário personalizado 6" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/465803694_937439225148868_4418834621994243060_n.webp" alt=" alt="Calendário personalizado 7" width="100" height="100">
                 </div>
             </div>
             <div class="product-category">
                 <h3>Topos de Bolos</h3>
                 <p>Enfeites especiais para decorar seus bolos.</p>
                 <div class="product-gallery">
-                    <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Topo%20de%20bolo%20essa%20pontinha%20olha%20as%20cartas%20que%20coisa%20mais%20linda.webp" alt="Topo de bolo decorativo" width="100" height="100">
+                    <img src="//raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Topo%20de%20bolo%20essa%20pontinha%20olha%20as%20cartas%20que%20coisa%20mais%20linda.webp" alt=" alt="Topo de bolo decorativo" width="100" height="100">
+             <img src="https://raw.githubusercontent.com/Mathsrds/atelie-da-laryh/refs/heads/main/Topo%20de%20bolo%20essa%20pontinha%20olha%20as%20cartas%20que%20coisa%20mais%20linda.webp" alt="Topo de bolo decorativo" width="100" height="100">
                 </div>
             </div>
         </section>
@@ -171,8 +213,16 @@
         <textarea name="message" placeholder="Encomenda" rows="4" required></textarea>
         <input type="submit" value="Enviar">
     </form>
-</section>
-
+        </section>
     </div>
+    
+    <!-- Decorative SVGs -->
+    <svg class="decorative-svg" xmlns="http://www.w3.org/2000/svg" fill="#d73c5d" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"/>
+    </svg>
+    <svg class="decorative-svg" xmlns="http://www.w3.org/2000/svg" fill="#a45c6f" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="16" height="16" rx="8"/>
+    </svg>
 </body>
 </html>
+```
